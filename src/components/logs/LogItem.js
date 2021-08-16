@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from 'react-redux';
 import Moment from "react-moment";
 import PropTypes from "prop-types";
 
@@ -32,4 +33,6 @@ LogItem.propTypes = {
   log: PropTypes.object.isRequired,
 };
 
-export default LogItem;
+export default connect(
+  null,
+)(LogItem);;
